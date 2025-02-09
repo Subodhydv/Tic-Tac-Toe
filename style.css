@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(47, 9, 9);
+    color: white;
+    height:65px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: "Varela Round", serif;
+    
+    
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+
+
+
+}
+.container{
+  display: grid;  
+  grid-template-columns: repeat(3,10vw);
+  grid-template-rows: repeat(3,10vw);
+  font-family:  "Varela Round", serif;
+
+}
+.container div{
+    border: 2px solid black;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box:hover{
+    background-color: rgb(222, 219, 228);
+   cursor: pointer;
+}
+.info{
+    font-size: 25px;
+}
+
+.gameInfo{
+    padding: 0 34px;
+  font-family: "Baloo Bhaina 2", cursive;;
+}
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+nav ul{
+   list-style-type: none;
+}
+.imagebox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.bt-0 { border-top: none !important; }
+.bl-0 { border-left: none !important; }
+.br-0 { border-right: none !important; }
+.bb-0 { border-bottom: none !important; }
+#reset {
+    margin: 0 23px;
+    padding: 6px 14px;
+    background: rgb(162, 120, 150);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Baloo Bhaina 2";
+    font-size: 15px;
+    font-weight: bolder;
+
+
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 950px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
+
